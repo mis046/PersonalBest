@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.team13.personalbest_team13_skeleton">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:name=".notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".services.DailyService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <activity
+            android:name=".activities.FriendList"
+            android:label="Friend List"
+            android:screenOrientation="portrait" />
+
+        <!-- MainActivity is the parent of ChatActivity -->
+        <activity
+            android:name=".activities.ChatActivity"
+            android:label="Active Chats"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activities.ChatBoxActivity"
+            android:label="Chat Detail"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activities.ViewMonthlySummary"
+            android:label="Your Friend's Activities"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.ViewFriendActivities"
+            android:label="Your Friend's Activities"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.StackedBarChartActivity"
+            android:label="Weekly Progress"/>
+
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.GoalSettingsActivity"
+            android:label="@string/GoalName"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DisplayProgressActivity"
+            android:label="@string/ProgressName"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

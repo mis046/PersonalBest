@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".activities.GoalSettingsActivity">
+
+
+    <TextView
+        android:id="@+id/textGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default Goal: 5000 steps"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:hint="Input your new goal"
+        android:inputType="number"
+        android:textSize="16dp"
+        android:textAlignment="center"/>
+
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:text="Save goal"
+        android:padding="10dp"
+        android:background="@drawable/button_round3"
+        android:textSize="14dp"
+        android:textColor="@android:color/background_light"/>
+
+
+</LinearLayout>

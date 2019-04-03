@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.SettingsActivity" >
+
+    <TextView
+        android:id="@+id/currHeightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:text="Height (inches)"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/currHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:text="Default: 72"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/currStrideLengthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:text="Stride Length (inches)"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/currStrideLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:text="Default: 29"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/inputHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:ems="10"
+        android:hint="Your Height (inches)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnUpdateHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+
+</LinearLayout>
